@@ -142,7 +142,7 @@ cu -l /dev/ttyUSB0 -s 115200
 ```
 The following screenshot is a reading of the *Serial Port*, you should see something like this:
 
-![ESP32 receiver Serial Monitor](https://i.postimg.cc/m2zhLhPr/Screenshot-from-2020-11-12-12-20-21.png)
+![ESP32 receiver Serial Monitor](https://raw.githubusercontent.com/lukinias/iot_pet_feeder/main/ESPSerialPort.png)
 
 ## Send Harcoded Json to Keepy to see ESP32 reactions
 
