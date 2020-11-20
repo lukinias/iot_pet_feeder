@@ -1,5 +1,5 @@
 # IoT Pet Feeder
-![ESP32 receiver Hardware connections](https://raw.githubusercontent.com/lukinias/iot_pet_feeder/main/images_and_videos/logo.png)
+![IoT Pet Feeder](https://raw.githubusercontent.com/lukinias/iot_pet_feeder/main/images_and_videos/logo.png)
 
 ## Introduction
 (**FOR A DETAILED GUIDE AND DESCRIPTION CHECK THE [WIKI](https://github.com/lukinias/iot_pet_feeder/wiki)**)
