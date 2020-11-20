@@ -37,17 +37,27 @@ def process_balance():
 	while True:
 		with open("config.json", "r") as readfile:
 			config_data = json.load(readfile)
-		balance = api.get_balances(addresses=[config_data['channel']])['balances'][0]
+		
+		try:
+			balance = api.get_balances(addresses=[config_data['channel']])['balances'][0]
+		except Exception as e:
+			print(f'Exception ocurred - Keepy not found: {e}')
+			
 		if balance > global_balance:
 			print("-------------------------------------------")
-			print(f"A new balance is {balance} iotas. Sending data to the tangle.")
-			data = {"iot2tangle":[{"sensor":"Food","data":[{"cash":str(balance)}]}],"device": "ESP32-PETFEEDER","timestamp": str(ts)}
+			print(f"The new balance is {balance} iotas.")
+			data = {"iot2tangle":[{"sensor":"Food","data":[{"cash":str(balance)}]}],"device": config_data['device_id'],"timestamp": str(ts)}
 			global_balance = balance
-			response = requests.post('http://127.0.0.1:3002/messages', json=data)
+			
+			try:
+				response = requests.post(f"{config_data['keepy_address']}/messages", json=data)
+			except Exception as e:
+				print(f'Exception ocurred: {e}')
+				
 			if response.status_code == 201:
-				print(f"Response code: {response.status_code} - OK")
+				print(f"Sending data to the tangle OK.")
 			else:
-				print(f"Response code: {response.status_code} - Error")
+				print(f"Sending data to the tangle Error (code: {response.status_code})")
 		time.sleep(10)
 
 cartel()

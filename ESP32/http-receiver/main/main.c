@@ -10,14 +10,13 @@
 
 struct device dev;
 struct json j;
-//char js[JSON_SIZE_MAX];
 
 long count, init_t;
 
 int main ()
 {	
     config(&dev);				/* Configure Name of the device, Endpoint address and Wifi credentials (if its a WiFi Connection), return string with the endpoint */
-    initPeripherals(&count);	/* Init GPIOs, I2C and ADC */
+    initPeripherals(&count);	/* Init GPIOs */
     connectNetwork(&dev, true);	/* Will drop out of this structure only when it has connected to the network and checks the existence of the endpoint */
 
     while (1)

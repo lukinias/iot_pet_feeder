@@ -77,7 +77,7 @@ void action(struct json *j)
 		/************************************************************************************************************/
 
 		// Send this command in shell to be able to simulate the examples:
-		// curl --location --request POST 'YOUR_KEEPY_HOST:3002/messages' --header 'Content-Type: application/json' --data-raw '{"iot2tangle":[{"sensor":"Internal","data":[{"InternalTemperature":"47.24"}]},{"sensor":"Environmental","data":[{"Temperature":"50.0"},{"Humidity":"34.2"},{"Pressure":"998.20"}]},{"sensor":"Acoustic","data":[{"SoundLevel":"High"}]},{"sensor":"Light","data":[{"Light":"0"}]},{"sensor":"Accelerometer","data":[{"X":"3.98"},{"Y":"0.06"},{"Z":"9.20"}]},{"sensor":"Gyroscope","data":[{"X":"0.40"},{"Y":"-0.43"},{"Z":"-0.05"}]}],"device": "DEVICE_ID_1","timestamp": "1601653408"}'
+		// curl --location --request POST 'YOUR_KEEPY_HOST:3002/messages' --header 'Content-Type: application/json' --data-raw '{'iot2tangle': [{'sensor': 'Food', 'data': [{'cash': '6'}]}], 'device': 'ESP32-PETFEEDER', 'timestamp': '1605903605'}"
 
 	}
 }
