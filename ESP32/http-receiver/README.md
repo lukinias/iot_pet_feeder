@@ -12,7 +12,7 @@ A simple example to illustrate the idea: *Your paying iotas to the feeder addres
 
 The default *ESP32 Outputs GPIOs* are:
 * **Four for the step by step motor: Output/Relay 1 -> GPIO18  --  Output/Relay 2 -> GPIO18  --  Output/Relay 3 -> GPIO5  --  Output/Relay 4 -> GPIO17**
-* **One for the water pumo: peripherals/gpio WATER_PUMP -> GPIO23**
+* **One for the water pump: peripherals/gpio WATER_PUMP -> GPIO23**
 
 ![ESP32 receiver Hardware connections](https://raw.githubusercontent.com/lukinias/iot_pet_feeder/main/images_and_videos/ESPReceiver.png)
 
