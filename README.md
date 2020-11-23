@@ -17,3 +17,5 @@
 * [5V 28BYJ-48 Step by Step Motor and ULN2003A Driver](https://www.ebay.es/itm/Motore-Passo-Passo-5V-28BYJ-48-con-Driver-ULN2003A-Stepper-Motor-Arduino-Modulo-/263318331729)
 * [5V One Channel Relay](https://www.ebay.es/itm/1-Channel-5V-Relay-Module-with-Optocoupler-H-L-High-Level-Triger-for-Arduino-/181862165569)
 * [Mini Water Pump](https://www.ebay.com/itm/Mini-Bomba-Sumergible-de-Agua-DC-3V-120L-H-2-5v-6v-Arduino-Electronica-DIY-/222711711995)
+
+#### [3D Structure Design for printing](https://github.com/lukinias/iot_pet_feeder/wiki/3D-Structure-Design-for-printing)
