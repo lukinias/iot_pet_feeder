@@ -8,11 +8,11 @@
 const char* id_name = "ESP32-PETFEEDER";
 
 /* Network Configuration */
-const char* ssid_WiFi = "negro_el_33";
-const char* pass_WiFi = "taunus23";
+const char* ssid_WiFi = "mySSID";
+const char* pass_WiFi = "myPASS";
 
 /* HTTP Endpoint Configuration */
-const char* address = "192.168.33.110/messages/last";  /* Endpoint address (HTTP), must NOT include 'http://xxx' or 'tcp://xxx', and must include '/sensor_data' for using in I2T Gateway*/
+const char* address = "YOUR_KEEPY_HOST/messages/last";  /* Endpoint address (HTTP), must NOT include 'http://xxx' or 'tcp://xxx', and must include '/sensor_data' for using in I2T Gateway*/
 int port = 3002;
 
 /* Enable Relays */
