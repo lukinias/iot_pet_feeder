@@ -4,8 +4,6 @@
 ## Description
 (**FOR A DETAILED GUIDE AND DESCRIPTION CHECK THE [WIKI](https://github.com/lukinias/iot_pet_feeder/wiki)**)
 
-[PROJECT DESCRIPTION HERE]
-
 ## Software requirements
 
 * [esp-idf 4.1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#step-2-get-esp-idf) to build and flash the projects into ESP32 
