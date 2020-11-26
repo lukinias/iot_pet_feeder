@@ -6,9 +6,9 @@
 
 ## Software requirements
 
-* [esp-idf 4.1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#step-2-get-esp-idf) to build and flash the projects into ESP32 
-* [Streams-http-gateway](https://github.com/iot2tangle/Streams-http-gateway) To create channels to upload our data on the tangle
-* [keepy](https://github.com/iot2tangle/Keepy) to speed up the communication to and from the channel, the traffic light will get only the last 5 messages present on the tangle
+* [esp-idf 4.1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#step-2-get-esp-idf) to build and flash the projects into ESP32.
+* [Streams-http-gateway](https://github.com/iot2tangle/Streams-http-gateway) To create channels to upload our data on the tangle.
+* [keepy](https://github.com/iot2tangle/Keepy) to speed up the communication to and from the channel.
 
 ## Bill of materials
 
